@@ -5,7 +5,7 @@ pkgname=perl-test-needs
 #_pkgreal is used by apkbuild-cpan to find modules at MetaCpan
 _pkgreal=Test-Needs
 pkgver=0.002010
-pkgrel=${pkgrel:-0}
+pkgrel=1
 pkgdesc="Skip tests when modules not available"
 url="https://metacpan.org/release/Test-Needs/"
 arch="noarch"
@@ -31,7 +31,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 1dde33f0b161a9cb99d1add141706ae015472a16620c38c159e3ae9654d749c275c7a4a979082c2720999305bf25129e7b178a9afdd6f4b4dfc9ee00281c76eb  Test-Needs-0.002010.tar.gz
 "
